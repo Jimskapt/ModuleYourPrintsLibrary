@@ -1,14 +1,24 @@
 # ModuleYourPrintsLibrary
-An OpenSCAD library designed to separate the components of your projects in order to become modular (exchangeable / removable)
+MYPL is an OpenSCAD library (free as freedom, MIT licence) designed to separate the components of your projects in order to become modular (exchangeable / removable).
 
 # How it's works
 
 It has been designed to be installed radially, so all the top surface is available to 3D-print.
 
-(example pictures coming soon)
+Illustrating example (in red) :
+
+![Preview](https://github.com/Jimskapt/ModuleYourPrintsLibrary/raw/Mark1/pictures/ReadmePreview-1.png?raw=true "Example")
+
+A sectional view of the principle : 
+![Preview](https://github.com/Jimskapt/ModuleYourPrintsLibrary/raw/Mark1/pictures/ReadmePreview-2.png?raw=true "Example")
+
+Open this 3D models in your web browser :
+- [plain view](https://github.com/Jimskapt/ModuleYourPrintsLibrary/blob/Mark1/examples/ReadmePreview.stl)
+- [section view](https://github.com/Jimskapt/ModuleYourPrintsLibrary/blob/Mark1/examples/ReadmePreview-half.stl)
 
 ## Using/install library in OpenSCAD
 
+Just once (installing) :
 ```
 cd ../ #(if initialy you was in "YourProjectFolder")
 git clone https://github.com/Jimskapt/ModuleYourPrintsLibrary.git
@@ -17,7 +27,7 @@ git checkout Mark1
 cd ../YourProjectFolder
 ```
 
-After that, open your file in OpenSCAD, and add following line in top of your file :
+After that, each time you need to use MYPL Mark1, add following line in top of your file :
 
 ```
 use <../ModuleYourPrintsLibrary/library.scad>;
@@ -35,9 +45,22 @@ You can now use instructions in your project :
     - width :	`half_male_y(thetaA=60,thetaB=30,margin=1)`
     - height :	`half_male_z(thetaA=60,thetaB=30,margin=1)`
 
-## Extract
+NB :
+- margin is the space between male and female form. Warning : if you set margin=1, that's mean there is 0.5mm on the left and 0.5 on the right.
+- deep is the additional length to shape its purpose (that is the length of the "tunnel" for male form).
+- thetaA is the angle of the clip in the direction of insertion.
+- thetaB is the angle of the clip in the direction of extraction.
+
+## Extract the male form
 You can use a clamp to pull-out the male form from female form.
-(illustrating picture coming soon)
+![Preview](https://github.com/Jimskapt/ModuleYourPrintsLibrary/raw/Mark1/pictures/extractMaleForm.jpg?raw=true "Example")
+
+## Test conditions
+
+O.S. : Archlinux
+Software : OpenSCAD 2015.03-2 and 2015.03-3
+Printer : Dagoma Discovery 200
+Material : PLA Grey Octofiber
 
 # Positive aspects of this design
 - You only need a 3D printer to use it
