@@ -1,6 +1,7 @@
 use <../library.scad>;
 
-half_view=true;
+half_view=false;
+show_top=false;
 
 difference()
 {
@@ -8,11 +9,15 @@ difference()
   {
     rotate([angle,0,0])
     {
-      difference()
+      if(show_top || (!show_top && angle==180))
       {
-        translate([0,0,(half_female_z(deep=35/2)+2+0.5)/2])
-        cylinder(h=half_female_z(deep=35/2)+2,d=35,center=true,$fn=600);
-        half_female_form(deep=35/2);
+        difference()
+        {
+          translate([0,0,(half_female_z(deep=35/2)+2+0.5)/2])
+            cylinder(h=half_female_z(deep=35/2)+2,d=35,center=true,$fn=600);
+        
+          half_female_form(deep=35/2);
+        }
       }
       
       color("red")
