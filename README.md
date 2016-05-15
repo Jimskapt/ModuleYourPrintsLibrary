@@ -9,12 +9,15 @@ Illustrating example (in red) :
 
 ![Preview](https://github.com/Jimskapt/ModuleYourPrintsLibrary/raw/Mark1/pictures/ReadmePreview-1.png?raw=true "Example")
 
-A sectional view of the principle : 
 ![Preview](https://github.com/Jimskapt/ModuleYourPrintsLibrary/raw/Mark1/pictures/ReadmePreview-2.png?raw=true "Example")
+
+![Preview](https://github.com/Jimskapt/ModuleYourPrintsLibrary/raw/Mark1/pictures/ReadmePreview-3.png?raw=true "Example")
 
 Open this 3D models in your web browser :
 - [plain view](https://github.com/Jimskapt/ModuleYourPrintsLibrary/blob/Mark1/examples/ReadmePreview.stl)
-- [section view](https://github.com/Jimskapt/ModuleYourPrintsLibrary/blob/Mark1/examples/ReadmePreview-half.stl)
+- [sectional view](https://github.com/Jimskapt/ModuleYourPrintsLibrary/blob/Mark1/examples/ReadmePreview-half.stl)
+- [without top](https://github.com/Jimskapt/ModuleYourPrintsLibrary/blob/Mark1/examples/ReadmePreview-withoutTop.stl)
+- [without top and sectional view](https://github.com/Jimskapt/ModuleYourPrintsLibrary/blob/Mark1/examples/ReadmePreview-withoutTop-half.stl)
 
 ## Using/install library in OpenSCAD
 
@@ -52,15 +55,16 @@ NB :
 - thetaB is the angle of the clip in the direction of extraction.
 
 ## Extract the male form
-You can use a clamp to pull-out the male form from female form.
+You can use a clamp to pull-out the male form from female form :
+
 ![Preview](https://github.com/Jimskapt/ModuleYourPrintsLibrary/raw/Mark1/pictures/extractMaleForm.jpg?raw=true "Example")
 
 ## Test conditions
 
-O.S. : Archlinux
-Software : OpenSCAD 2015.03-2 and 2015.03-3
-Printer : Dagoma Discovery 200
-Material : PLA Grey Octofiber
+- O.S. : Archlinux
+- Software : OpenSCAD 2015.03-2 and 2015.03-3
+- Printer : Dagoma Discovery 200
+- Material : PLA Grey Octofiber
 
 # Positive aspects of this design
 - You only need a 3D printer to use it
